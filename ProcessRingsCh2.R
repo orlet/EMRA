@@ -286,6 +286,11 @@ AnalyzeData <- function() {
   PlotBlankCorr(startTime = 0)
   PlotOffTargetCorr(startTime = 0)
   CheckRingQuality(time1 = 10, time2 = 20)
+  if (startTime != 0){
+          PlotInjectionTime()
+          PlotInjectionTimeThermal()
+  }
+        
 }
 
 AnalyzeAllData <- function() {
